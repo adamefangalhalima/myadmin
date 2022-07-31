@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    
+        <!-- Compiled and minified JavaScript -->
+        <script type="text/javascript">
+          window.onload = function () {
+          
+          var chart = new CanvasJS.Chart("chartContainer", {
+              theme: "light1", // "light2", "dark1", "dark2"
+              animationEnabled: false, // change to true		
+              title:{
+                  text: "visitors dayly"
+              },
+              data: [
+              {
+                  // Change type to "bar", "area", "spline", "pie",etc.
+                  type: "line",
+                  dataPoints: [
+                      { label: "apple",  y: 10  },
+                      { label: "orange", y: 15  },
+                      { label: "banana", y: 25  },
+                      { label: "mango",  y: 30  },
+                      { label: "grape",  y: 28  }
+                  ]
+              }
+              ]
+          });
+          chart.render();
+          
+          }
+          </script>
+             <script src="https://cdn.ckeditor.com/ckeditor5/33.0.0/classic/ckeditor.js"></script>
+          
+       
+        <!--Let browser know website is optimized for mobile-->
+    </head>
+    <body>
+        <section class=" blue">
+          <nav class=" transparent">
+           <div class="container">
+            <div class="nav-wrapper  ">
+                <a href="index.html" class="brand-logo">MYadmin</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                  <li ><a href="index.html">Dashboard</a></li>
+                  <li><a href="posts.html">Posts</a></li>
+                  <li><a href="categories.html">Categories</a></li>
+                  <li><a href="comments.html">Comments</a></li>
+                  <li><a href="users.html">Users</a></li>
+                  <li><a href=""><i class="material-icons">menu</i></a></li>
+                </ul>  
+              
+              </div>
+           </div>
+          </nav>
+        
+          <ul id="slide-out" class="sidenav">
+            <li><div class="user-view">
+              <div class="background blue">
+              
+              </div>
+              <a href="#user"><img class="circle" src="image5.jpg"></a>
+              <a href="#name"><span class="white-text name">Aicha Alkassoum</span></a>
+              <a href="#email"><span class="white-text email">aichaalka@gmail.com</span></a>
+            </div></li>
+            <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+            <li><a href="posts.html">Posts</a></li>
+                  <li><a href="categories.html">Categories</a></li>
+                  <li><a href="comments.html">Comments</a></li>
+                  <li><a href="users.html">Users</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Account Controls</a></li>
+            <li><a class="waves-effect" href="#!">Logout</a></li>
+          </ul>
+        
+        </section>
+        <!-------------------------section2--------------->
+       
+        <!---------------------------------section3--------->
+        <section>
+            <div class="row light-blue lighten-3" style="margin-bottom:0;">
+                <div class="col s12 m8 ">
+                
+                 
+                       
+                    
+                      
+                </div>
+              
+            </div>
+            <div class="container">
+            <div class="row "  style="margin-bottom:0;">
+              <br>
+                <div class="card white">
+                  <div class="card-content black-text">
+                    <span class="card-title">Posts</span>
+                    <table class="striped">
+                      <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Date Created</th>
+                            
+                        </tr>
+                      </thead>
+              
+                      <tbody>
+                        <tr>
+                          <td>Post One</td>
+                          <td>Web Development</td>
+                          <td>Oct 1,2019</td>
+                          <td><a class="waves-effect waves-light btn">DETAILS</a></td>
+                        </tr>
+                        <tr>
+                          <td>Post Two</td>
+                          <td>Graphic Design</td>
+                          <td>Oct 2,2019</td>
+                          <td><a class="waves-effect waves-light btn">DETAILS</a></td>
+                        </tr>
+                        <tr>
+                          <td>Post Three</td>
+                          <td>Web Development</td>
+                          <td>Oct 3,2019</td>
+                          <td><a class="waves-effect waves-light btn">DETAILS</a></td>
+                        </tr>
+                        <tr>
+                          <td>Post Four</td>
+                          <td>Tech Gadgets</td>
+                          <td>Oct 4,2019</td>
+                          <td><a class="waves-effect waves-light btn">DETAILS</a></td>
+                        </tr>
+                        <tr>
+                          <td>Post Five</td>
+                          <td>Graphic Design</td>
+                          <td>Oct 5,2019</td>
+                          <td><a class="waves-effect waves-light btn">DETAILS</a></td>
+                        </tr>
+                        <tr>
+                          <td>Post Six</td>
+                          <td>Web Development</td>
+                          <td>Oct 6,2019</td>
+                          <td><a class="waves-effect waves-light btn">DETAILS</a></td>
+                        </tr>
+                        <tr></tr>
+                         <td>
+                          <ul class="pagination">
+                            <li class=""><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active blue"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                          </ul>
+                         </td>
+                          
+                      </tbody>
+                     
+                    </table>
+                  </div>
+                </div>
+              <br>
+             
+                <br>
+                <br>
+                     
+              </div>
+            </div>
+              <div class="fixed-action-btn">
+                <a class="btn-floating btn-large red">
+                  <i class="large material-icons">add</i>
+                </a>
+                <ul>
+                  
+                  <li><a class="btn-floating blue waves-effect waves-light btn modal-trigger"href="#modal"><i class="material-icons">edit</i></a></li>
+                  <li><a class="btn-floating blue waves-effect waves-light btn modal-trigger"href="#modal2"><i class="material-icons">folder</i></a></li>
+                  <li><a class="btn-floating blue waves-effect waves-light btn modal-trigger" href="#modal1" ><i class="material-icons">person</i></a></li>
+                </ul>
+              </div>
+            
+        
+        </section>
+        <footer class="light-blue lighten-3  " style="padding: 30px;">
+          <p class="white-text center">MyAdmin CodeLoccol Copright 2022</p>
+          <!-- Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4 class="">Add Category</h4>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Title</label>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="waves-effect waves-light btn">Submit</a>
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+         <h2>Add post</h2>
+         <div class="input-field col s12">
+          
+          <input type="text" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Title</label>
+        </div>
+
+        <div class="input-field col s12">
+          
+          <input type="text" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Categorie</label>
+        </div>
+        <div id="editor">
+            <p>This is some sample content.</p>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a class="waves-effect waves-light btn">Submit</a>
+    </div>
+  </div>
+     <!---------------form------------->
+  
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h5>Add User</h5>
+        <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Confirm Password</label>
+      </div>
+    </div>
+ <p style="margin-left: 86%;"> <a class="waves-effect waves-light btn">Submit</a></p>
+  </form>
+  </div>
+</div>
+  
+            
+          
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     
+      <script>
+        $(document).ready(function(){
+   $('.fixed-action-btn').floatingActionButton();
+ });
+   </script>
+    <script>
+      $(document).ready(function(){
+  $('.modal').modal();
+});
+  </script>
+
+
+    
+<script>
+  ClassicEditor
+      .create( document.querySelector( '#editor' ) )
+      .catch( error => {
+          console.error( error );
+      } );
+</script>
+<script>
+  $(document).ready(function(){
+$('input.autocomplete').autocomplete({
+data: {
+  "Apple": null,
+  "Microsoft": null,
+  "Google": 'https://placehold.it/250x250'
+},
+});
+});
+</script>
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+
+        </body>
+</html>
